@@ -1,0 +1,302 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #183044;
+  background: #ffffff;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 12px #0000000d;
+}
+
+.logo {
+  font-size: 23px;
+  font-weight: bold;
+  color: #163c50;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #16a6a0;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: #425768;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #16a6a0;
+}
+
+.nav-btn, .primary-btn {
+  display: inline-block;
+  background: #119d98;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 7px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.hero {
+  min-height: 470px;
+  padding: 85px 10%;
+  background: linear-gradient(120deg, #e9f8f7, #f4f9ff);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-content {
+  max-width: 550px;
+}
+
+.tag {
+  color: #119d98;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 18px 0;
+}
+
+.hero h1 span {
+  color: #119d98;
+}
+
+.hero-content p {
+  color: #617384;
+  margin-bottom: 28px;
+}
+
+.hero-card {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  max-width: 310px;
+  box-shadow: 0 12px 40px #18304412;
+}
+
+.hero-icon {
+  color: #119d98;
+  font-size: 55px;
+}
+
+.hero-card h2 {
+  margin: 10px 0;
+}
+
+.hero-card p {
+  color: #617384;
+  font-size: 14px;
+}
+
+.status {
+  margin-top: 20px;
+  color: #119d98;
+  font-size: 12px;
+}
+
+.section {
+  padding: 75px 10%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.section-heading h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.section-heading p {
+  color: #71808c;
+}
+
+.service-grid, .doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.service-card, .doctor-card {
+  padding: 28px;
+  border: 1px solid #e5eeee;
+  border-radius: 13px;
+  text-align: center;
+  background: white;
+}
+
+.service-icon, .doctor-avatar {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.service-card p, .doctor-card p {
+  color: #71808c;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.doctors {
+  background: #f5fafb;
+}
+
+.doctor-grid {
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 650px;
+  margin: auto;
+}
+
+.doctor-card span {
+  display: inline-block;
+  margin-top: 12px;
+  color: #119d98;
+  font-size: 12px;
+}
+
+.appointment {
+  background: #eff9f8;
+}
+
+#appointmentForm {
+  max-width: 550px;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+}
+
+input, select {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d9e3e7;
+  border-radius: 7px;
+  background: white;
+  font-size: 14px;
+}
+
+#formMessage {
+  color: #14816e;
+  text-align: center;
+}
+
+.chat-box {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #e1e9eb;
+  border-radius: 12px;
+  background: #fafdfd;
+}
+
+.bot-message, .user-message {
+  padding: 12px;
+  border-radius: 9px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.bot-message {
+  background: #e7f5f3;
+}
+
+.user-message {
+  background: #e9effb;
+  text-align: right;
+}
+
+#chatForm {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+footer {
+  padding: 35px 10%;
+  text-align: center;
+  background: #163c50;
+  color: white;
+}
+
+footer p {
+  font-size: 13px;
+  color: #d2e2e8;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-btn {
+    padding: 9px 12px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 55px 7%;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .section {
+    padding: 55px 7%;
+  }
+
+  .service-grid, .doctor-grid {
+    grid-template-columns: 1fr;
+  }
+}
